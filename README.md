@@ -12,6 +12,7 @@
     - [Scripts](#scripts)
     - [Evaluation](#evaluation)
 4. [Plotting](#plotting)
+5. [Baselines](#baselines)
 
 
 ## 1. Installation & Dependencies<a name="Dependencies"></a>
@@ -62,6 +63,8 @@ The ```plotting``` folder contains the scripts used for radar plots
 The ```search_spaces``` folder contains the definition of the search spaces search spaces nasbench201, mobilenetv3, hardware aware transformers
 
 The ```predictor_data_utils``` and  ```hypernetwork_data_utils``` folder contains the pretrained predictors and hypernetworks respectively
+
+The ```baselines``` folder contains the scripts to run the synetune baselines for different search spaces.
 
 ### Dataset preparation
 
@@ -156,3 +159,7 @@ We then use the scoring protocol for BLEU and Sacre-BLEU from [HAT](https://gith
 ## 6. Plotting <a name="plotting"></a>
 
 To make the radar plots we use the file ```plotting/plot_radar.py```
+
+## 7. Baselines <a name="baselines"></a>
+
+The ```baselines``` folder and the ```baseline_scripts``` folder contains the code to run different baselines on all different search spaces. 
