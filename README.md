@@ -122,7 +122,13 @@ python -m torch.distributed.launch --nproc_per_node=8 --use_env search_spaces/Mo
 ```bash
 python search_spaces/hat/train.py --configs=search_spaces/hat/configs/wmt14.en-de/supertransformer/space0.yml
 ```
-
+#### Search on the HW-GPT-Bench search space (across 5 gpu devices)
+Download the pretrained supernet from [HW-GPT-Bench](https://github.com/automl/HW-GPT-Bench).
+```bash
+python search_spaces/hat/train.py --configs=search_spaces/hat/configs/wmt14.en-de/supertransformer/space0.yml
+```
+python -u search_spaces/gpt/train_llm_configurable_scratch.py -c juwels_owt_sw_s.yaml 
+```
 ## 4. Bash scripts  <a name="scripts"></a>
 The ```scripts/``` folder contains slurm scripts to launch the above search scripts
 
