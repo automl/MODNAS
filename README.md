@@ -126,7 +126,7 @@ python -m torch.distributed.launch --nproc_per_node=8 --use_env search_spaces/Mo
 python search_spaces/hat/train.py --configs=search_spaces/hat/configs/wmt14.en-de/supertransformer/space0.yml
 ```
 #### Search on the HW-GPT-Bench search space (across 5 gpu devices)
-Download the pretrained supernet from [HW-GPT-Bench](https://github.com/automl/HW-GPT-Bench).
+Download the pretrained supernet from [HW-GPT-Bench](https://github.com/automl/HW-GPT-Bench). Download device embeddings and processed dataset from [here](https://drive.google.com/drive/folders/15LaGiB038jFs648haYTrlRSG0owAlO7D?usp=sharing)
 ```bash
 python -u search_spaces/gpt/train_llm_configurable_scratch.py -c juwels_owt_sw_s.yaml 
 ```
